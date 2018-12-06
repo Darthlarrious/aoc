@@ -3,7 +3,7 @@
 (defn get-lines [file]
 (str/split-lines (slurp file)))
 
-(def inputs (map #(Integer/parseInt %)(get-lines "input.txt")))
+(def inputs (map #(Integer/parseInt %)(get-lines "day1_input.txt")))
 
 (def day1q1 (reduce + inputs))
 
